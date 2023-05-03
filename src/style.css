@@ -1,0 +1,75 @@
+body {
+  background-color: #a6d1d8;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+.container {
+  background-color: #e2eaec;
+}
+
+.border {
+  margin-top: 60px;
+  max-width: 950px;
+  border-width: thick;
+}
+
+.search {
+  margin-top: 10px;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(55, 54, 54);
+  transition: 200ms all ease-in-out;
+}
+
+.btn:hover {
+  color: rgb(55, 54, 54);
+  background-color: rgb(135, 156, 169);
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 500;
+}
+.current-temp {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  transition: 100ms all ease-in;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(77, 147, 147);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.current-weather-icon {
+  font-size: 80px;
+  text-align: center;
+}
+
+.forecast {
+  text-align: center;
+}
+
+.forecast-icon {
+  font-size: 50px;
+  text-align: center;
+}
+
+.forecast-day {
+  text-align: center;
+  font-weight: bold;
+}

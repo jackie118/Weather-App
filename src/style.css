@@ -6,6 +6,21 @@ h3 {
   font-size: 23px;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(88, 122, 143);
+  font-weight: 400;
+  transition: 100ms all ease-in;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(135, 156, 169);
+}
+
+ul {
+  list-style-type: none;
+}
 .container {
   background-color: #e2eaec;
 }
@@ -40,21 +55,6 @@ h3 {
   font-weight: 700;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 400;
-  transition: 100ms all ease-in;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: rgb(77, 147, 147);
-}
-
-ul {
-  list-style-type: none;
-}
-
 .current-weather-icon {
   font-size: 80px;
   text-align: center;
@@ -72,4 +72,8 @@ ul {
 .forecast-day {
   text-align: center;
   font-weight: bold;
+}
+
+.footer {
+  text-align: center;
 }

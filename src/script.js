@@ -44,12 +44,13 @@ function displayCurrentWeather(response) {
   let minTemp = Math.round(response.data.main.temp_min);
   let maxTemp = Math.round(response.data.main.temp_max);
   let description = response.data.weather[0].main;
-  let humidity = Math.round(response.data.main.humidity);
+  let wind = Math.round(response.data.wind.speed);
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#current-degrees").innerHTML = `${currentTemp}`;
   document.querySelector("#min-max").innerHTML = `${maxTemp}°F / ${minTemp}°F`;
   document.querySelector("#description").innerHTML = `${description}`;
-  document.querySelector("#humidity").innerHTML = `${humidity}%`;
+  document.querySelector("#wind").innerHTML = `${wind}mph`;
+  console.log(response);
 }
 
 function updateCity(event) {

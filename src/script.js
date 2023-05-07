@@ -46,7 +46,7 @@ function displayCurrentWeather(response) {
   let description = response.data.weather[0].main;
   let humidity = Math.round(response.data.main.humidity);
   document.querySelector("h1").innerHTML = response.data.name;
-  document.querySelector("#current-degrees").innerHTML = `${currentTemp}°F`;
+  document.querySelector("#current-degrees").innerHTML = `${currentTemp}`;
   document.querySelector("#min-max").innerHTML = `${maxTemp}°F / ${minTemp}°F`;
   document.querySelector("#description").innerHTML = `${description}`;
   document.querySelector("#humidity").innerHTML = `${humidity}%`;

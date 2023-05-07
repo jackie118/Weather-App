@@ -21,6 +21,7 @@ a:hover {
 ul {
   list-style-type: none;
 }
+
 .container {
   background-color: #8cbcc3;
 }
@@ -63,16 +64,18 @@ ul {
 }
 
 .forecast {
-  text-align: center;
+  display: grid;
+  justify-content: center;
 }
 
 .forecast-icon {
-  font-size: 50px;
-  text-align: center;
+  display: grid;
+  justify-content: center;
 }
 
 .forecast-day {
-  text-align: center;
+  display: grid;
+  justify-content: center;
   font-weight: bold;
 }
 

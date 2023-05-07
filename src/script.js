@@ -45,12 +45,17 @@ function displayCurrentWeather(response) {
   let maxTemp = Math.round(response.data.main.temp_max);
   let description = response.data.weather[0].main;
   let wind = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#icon");
+
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#current-degrees").innerHTML = `${currentTemp}`;
   document.querySelector("#min-max").innerHTML = `${maxTemp}°F / ${minTemp}°F`;
   document.querySelector("#description").innerHTML = `${description}`;
   document.querySelector("#wind").innerHTML = `${wind}mph`;
-  console.log(response);
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function updateCity(event) {

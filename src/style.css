@@ -1,5 +1,5 @@
 body {
-  background-color: #a6d1d8;
+  background-color: #d2dfe1;
 }
 
 h3 {
@@ -22,7 +22,7 @@ ul {
   list-style-type: none;
 }
 .container {
-  background-color: #e2eaec;
+  background-color: #8cbcc3;
 }
 
 .border {
@@ -56,8 +56,10 @@ ul {
 }
 
 .current-weather-icon {
-  font-size: 80px;
+  font-size: 90px;
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .forecast {

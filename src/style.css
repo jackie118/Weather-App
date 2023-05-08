@@ -72,20 +72,14 @@ ul {
   color: black;
 }
 
-.forecast-day {
-  display: grid;
-  justify-content: center;
-  font-weight: bold;
-  margin-top: 30px;
-}
-
 .forecast-icon {
   display: grid;
   justify-content: center;
 }
 
-.forecast-range {
+.weather-forecast {
   text-align: center;
+  padding-top: 40px;
 }
 
 .forecast-min {

@@ -32,6 +32,11 @@ function searchCity(city) {
   axios.get(apiUrl).then(displayCurrentWeather);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast-range");
+  forecastElement.innerHTML = "Forecast";
+}
+
 function displayCurrentWeather(response) {
   let currentTemp = Math.round(response.data.main.temp);
   let minTemp = Math.round(response.data.main.temp_min);
@@ -107,6 +112,7 @@ celsiusLink.addEventListener("click", showCelsiusTemperature);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
-searchCity("New York");
-
 let fahrenheitTemperature = null;
+
+searchCity("New York");
+displayForecast();

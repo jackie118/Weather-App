@@ -36,12 +36,14 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
-    forecastHTML +
-    `
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
   <div class="col-2">
     <div class ="weather-forecast-day">
-      Monday
+      ${day}
       </div>
       <img
         src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -56,86 +58,8 @@ function displayForecast() {
       </div>
   </div>
 `;
-  forecastHTML =
-    forecastHTML +
-    `
-  <div class="col-2">
-    <div class ="weather-forecast-day">
-      Monday
-      </div>
-      <img
-        src="https://openweathermap.org/img/wn/10d@2x.png"
-        alt=""
-        id="forecast-icon-1"
-        height="100"
-        width="100"
-      />
-      <div class="weather-forecast-temp">
-      <span class="forecast-max">59° </span>
-      <span class="forecast-min">37°</span>
-      </div>
-  </div>
-`;
-  forecastHTML =
-    forecastHTML +
-    `
-  <div class="col-2">
-    <div class ="weather-forecast-day">
-      Monday
-      </div>
-      <img
-        src="https://openweathermap.org/img/wn/10d@2x.png"
-        alt=""
-        id="forecast-icon-1"
-        height="100"
-        width="100"
-      />
-      <div class="weather-forecast-temp">
-      <span class="forecast-max">59° </span>
-      <span class="forecast-min">37°</span>
-      </div>
-  </div>
-`;
-  forecastHTML =
-    forecastHTML +
-    `
-  <div class="col-2">
-    <div class ="weather-forecast-day">
-      Monday
-      </div>
-      <img
-        src="https://openweathermap.org/img/wn/10d@2x.png"
-        alt=""
-        id="forecast-icon-1"
-        height="100"
-        width="100"
-      />
-      <div class="weather-forecast-temp">
-      <span class="forecast-max">59° </span>
-      <span class="forecast-min">37°</span>
-      </div>
-  </div>
-`;
-  forecastHTML =
-    forecastHTML +
-    `
-  <div class="col-2">
-    <div class ="weather-forecast-day">
-      Monday
-      </div>
-      <img
-        src="https://openweathermap.org/img/wn/10d@2x.png"
-        alt=""
-        id="forecast-icon-1"
-        height="100"
-        width="100"
-      />
-      <div class="weather-forecast-temp">
-      <span class="forecast-max">59° </span>
-      <span class="forecast-min">37°</span>
-      </div>
-  </div>
-`;
+  });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }

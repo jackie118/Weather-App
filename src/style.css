@@ -48,6 +48,9 @@ ul {
   background-color: rgb(135, 156, 169);
 }
 
+.heading {
+  margin-top: 40px;
+}
 .current-weather-icon {
   display: grid;
   justify-content: center;

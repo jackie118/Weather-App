@@ -48,6 +48,11 @@ ul {
   background-color: rgb(135, 156, 169);
 }
 
+.current-weather-icon {
+  display: grid;
+  justify-content: center;
+}
+
 .description {
   font-size: 20px;
   font-weight: 500;
@@ -57,9 +62,14 @@ ul {
   font-weight: 700;
 }
 
-.current-weather-icon {
-  display: grid;
-  justify-content: center;
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .forecast-day {

@@ -8,7 +8,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: rgb(88, 122, 143);
+  color: rgb(83, 111, 129);
   font-weight: 400;
   transition: 100ms all ease-in;
 }
@@ -84,9 +84,12 @@ ul {
   justify-content: center;
 }
 
-.forecast {
-  display: grid;
-  justify-content: center;
+.forecast-range {
+  text-align: center;
+}
+
+.forecast-min {
+  color: rgb(83, 111, 129);
 }
 
 .footer {

@@ -24,13 +24,6 @@ function formatDate(date) {
   return `${day} at ${hours}:${minutes}`;
 }
 
-let currentDate = document.querySelector("h3");
-let now = new Date();
-let citySearch = document.querySelector("#city-form");
-
-currentDate.innerHTML = formatDate(now);
-citySearch.addEventListener("submit", updateCity);
-
 function searchCity(city) {
   let apiKey = "aca4dd3643b89e94dbd3cac6cf6f2638";
   let units = "imperial";
@@ -97,6 +90,13 @@ function showFahrenheitTemperature(event) {
   let currentTemp = document.querySelector("#current-degrees");
   currentTemp.innerHTML = Math.round(fahrenheitTemperature);
 }
+
+let currentDate = document.querySelector("h3");
+let now = new Date();
+let citySearch = document.querySelector("#city-form");
+
+currentDate.innerHTML = formatDate(now);
+citySearch.addEventListener("submit", updateCity);
 
 let currentLocationButton = document.querySelector("#search-current");
 currentLocationButton.addEventListener("click", getCurrentLocation);

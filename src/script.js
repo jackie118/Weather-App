@@ -63,8 +63,9 @@ function displayForecast(response) {
         width="100"
       />
       <div class="weather-forecast-temp">
-      <span class="forecast-max">${Math.round(forecastDay.temp.max)}° </span>
-      <span class="forecast-min">${Math.round(forecastDay.temp.min)}°</span>
+      <span class="forecast-max">${Math.round(forecastDay.temp.max)}°F</span>
+      <span class="divider"> | </span>
+      <span class="forecast-min">${Math.round(forecastDay.temp.min)}°F</span>
       </div>
   </div>
 `;
@@ -95,7 +96,7 @@ function displayCurrentWeather(response) {
 
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#current-degrees").innerHTML = `${currentTemp}`;
-  document.querySelector("#min-max").innerHTML = `${maxTemp}°F / ${minTemp}°F`;
+  document.querySelector("#min-max").innerHTML = `${maxTemp}°F | ${minTemp}°F`;
   document.querySelector("#description").innerHTML = `${description}`;
   document.querySelector("#wind").innerHTML = `${wind}mph`;
   iconElement.setAttribute(

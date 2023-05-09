@@ -54,7 +54,7 @@
             />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
           <h1></h1>
           <h3></h3>
           <div class="description" id="description"><strong>Rain</strong></div>
@@ -79,7 +79,7 @@
                 ></span
               >
             </li>
-            <li>High/Low: <span id="min-max">49° F / 37° F</span></li>
+            <li><span id="min-max">49° F | 37° F</span></li>
             <li>Wind speed: <span id="wind">6mph</span></li>
           </ul>
         </div>
@@ -87,7 +87,7 @@
       <div class="weather-forecast" id="forecast">
         <div class="row">
           <div class="col-2">
-            <div class="weather-forecast-day">Monday</div>
+            <div class="weather-forecast-day"></div>
             <img
               src="https://openweathermap.org/img/wn/10d@2x.png"
               alt=""
@@ -96,14 +96,14 @@
               width="100"
             />
             <div class="weather-forecast-temp">
-              <span class="forecast-max">59° </span>
-              <span class="forecast-min">37°</span>
+              <span class="forecast-max" id="forecast-max"></span>
+              <span class="divider"> | </span>
+              <span class="forecast-min" id="forecast-min"></span>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="footer">
       <a href="https://github.com/jackie118/Weather-App.git" target="_blank"
         >Open-source code</a
